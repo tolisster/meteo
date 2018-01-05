@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Архив метеослужбы</title>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<h1>Архив метеослужбы</h1>
+	</div>
+	<div class="row content">
+		<div class="menu" id="menu-block">
+			<button data-graph="temperature">Температура</button>
+			<button data-graph="precipitation">Осадки</button>
+		</div>
+		<div class="view">
+			<div class="row filter">
+				<select id="from-select"></select>
+				<select id="to-select"></select>
+			</div>
+			<div class="row graph">
+				<canvas id="graph-canvas"></canvas>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="core/Router.js"></script>
+<script src="graph/Graph.js"></script>
+<script src="graph/TemperatureGraph.js"></script>
+<script src="graph/PrecipitationGraph.js"></script>
+<script src="MeteoStore.js"></script>
+<script src="GraphPage.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

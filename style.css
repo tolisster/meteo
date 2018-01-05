@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, system, sans-serif;
+}
+
+html, body, .container {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.row {
+  padding: 0 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .content {
+  flex-grow: 1;
+  display: flex;
+}
+
+.container .content .menu button {
+  display: block;
+  width: 100%;
+}
+
+.container .content .view {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .content .view .filter {
+  display: flex;
+}
+
+.container .content .view .filter select {
+  flex-grow: 1;
+}
+
+.container .content .view .graph {
+  flex-grow: 1;
+  display: flex;
+}
+
+.container .content .view .graph canvas {
+  display: block;
+  width: 100%;
+}
