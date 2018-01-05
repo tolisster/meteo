@@ -27,9 +27,9 @@
 		}
 
 		const router = new App.Router({
-			'/': openGraphPage,
-			'/temperature': openGraphPage,
-			'/precipitation': openGraphPage
+			'/meteo/': openGraphPage,
+			'/meteo/temperature': openGraphPage,
+			'/meteo/precipitation': openGraphPage
 		});
 
 		function buttonClicked(event) {
