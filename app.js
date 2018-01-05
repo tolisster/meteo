@@ -35,7 +35,7 @@
 		function buttonClicked(event) {
 			const button = event.currentTarget;
 			const storeName = button.dataset.graph;
-			router.push({storeName: storeName}, button.textContent, '/' + storeName);
+			router.push({storeName: storeName}, button.textContent, '/meteo/' + storeName);
 		}
 
 		const buttons = menuBlock.querySelectorAll('button');
